@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <link href='https://fonts.googleapis.com/css?family=Arimo&subset=cyrillic' rel='stylesheet' type='text/css'>
-    <script src="js/main.js"></script>
+    <script src="vanilla-slider-master/vanilla-slider.js"></script>
     <title> психологічний блог</title>
 </head>
 <body>
@@ -63,34 +63,86 @@
 <div class="before-articles">
     <h3>Наша команда</h3>
 </div>
-<div class="center">
-        <section class="person">
-            <img src="images/smile.jpg">
-            <div class="info">
-                <h4>Завало Олена Петрівна</h4>
-                <p>
-                Медичний психолог.Спеціаліст в області індивідуального консультування та психотерапії дорослих
-                </p>
-            </div>
-        </section>
-        <section class="person">
-            <img src="images/smile3.jpg">
-            <div class="info">
-                <h4>Атанасян Тарас Миколойович</h4>
-                <p>
-                Психолог-психоаналітик, психотерапевт.Спеціаліст в області індивідуального консультування та сімейної психології, психології розвитку, дитячої та юнацької психотерапії, сімейний і дитячий психолог
-                </p>
-            </div>
-        </section>
-        <section class="person">
-            <img src="images/smile2.jpg">
-            <div class="info">
-                <h4>Вандерварден Андрій Васильович</h4>
-                <p>
-                 вирішення індивідуальних проблем: кризові ситуації, невпевненість, навязливі думки, страхи та комплекси
-                </p>
-            </div>
-        </section>
+
+<a href="#" class="prev"></a>
+<a href="#" class="next"></a>
+<div class="slider psyhologs">
+    <ul>
+        <li>
+            <section class="person">
+                <img src="images/smile.jpg">
+                <div class="info">
+                    <h4>Завало Олена Петрівна</h4>
+                    <p>
+                    Медичний психолог.Спеціаліст в області індивідуального консультування та психотерапії дорослих
+                    </p>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="person">
+                <img src="images/smile3.jpg">
+                <div class="info">
+                    <h4>Атанасян Тарас Миколойович</h4>
+                    <p>
+                    Психолог-психоаналітик, психотерапевт.Спеціаліст в області індивідуального консультування та сімейної психології, психології розвитку, дитячої та юнацької психотерапії, сімейний і дитячий психолог
+                    </p>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="person">
+                <img src="images/smile2.jpg">
+                <div class="info">
+                    <h4>Вандерварден Андрій Васильович</h4>
+                    <p>
+                    вирішення індивідуальних проблем: кризові ситуації, невпевненість, навязливі думки, страхи та комплекси
+                    </p>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="person">
+                <img src="images/smile6.jpg">
+                <div class="info">
+                    <h4>Завало Олена Петрівна</h4>
+                    <p>
+                    Медичний психолог.Спеціаліст в області індивідуального консультування та психотерапії дорослих
+                    </p>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="person">
+                <img src="images/smile5.jpg">
+                <div class="info">
+                    <h4>Атанасян Тарас Миколойович</h4>
+                    <p>
+                    Психолог-психоаналітик, психотерапевт.Спеціаліст в області індивідуального консультування та сімейної психології, психології розвитку, дитячої та юнацької психотерапії, сімейний і дитячий психолог
+                    </p>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="person">
+                <img src="images/smile4.jpg">
+                <div class="info">
+                    <h4>Вандерварден Андрій Васильович</h4>
+                    <p>
+                    вирішення індивідуальних проблем: кризові ситуації, невпевненість, навязливі думки, страхи та комплекси
+                    </p>
+                </div>
+            </section>
+        </li>
+    </ul>
 </div>
+<script type="text/javascript">
+    var slider = new Slider('.slider', {
+      visibles: 3,
+      steps: 1,
+      controlNext: '.next',
+      controlPrev: '.prev'
+    });
+</script>
 </body>
 </html>

@@ -446,12 +446,15 @@ section.module.parallax-3 {
 /* ===========================================================
    Наша команда
    =========================================================== */
-  body .center:nth-child(5) {
-    /*background: rgba(0,0,0,.4);*/
-    /*height: 100vh;*/
-  }
-
-   body .center:nth-child(5) img {
+  .psyhologs {
+    /*border-top: 1px solid #333;*/
+    /*padding-top: 50px;*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+   }
+   body .psyhologs img {
       display: block;
       width: 190px;
       height: 190px;
@@ -460,6 +463,45 @@ section.module.parallax-3 {
 /*      clip-path: circle(82px at center);
       -webkit-clip-path: circle(82px at center);*/
    }
+
+   .slider {
+    position: relative;
+    overflow: hidden;
+   }
+
+    .slider ul {
+      list-style: outside none;
+      padding: 0;
+      margin: 0;
+      width: 10000%;
+      position: relative;
+      top: 0;
+      right: 0;
+      transition: all 0.6s ease;
+    }
+    
+    .slider li {
+      float: left;
+    }
+
+    .prev, 
+    .next {
+      opacity: .5;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      /*background-color: #333;*/
+      background-image: url(../img/next.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .prev {
+      /*top: 10px;*/
+      margin-left: 10%;
+      transform: scale(-1, 1);
+    }
+
 
    section .info {
     margin: 0 auto;
